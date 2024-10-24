@@ -2,7 +2,7 @@ FROM ubuntu:noble
 
 WORKDIR /app
 
-COPY build/bin/linuxX64/releaseExecutable/qbt-tracker-manager.kexe ./qbt-tracker-manager
+COPY build/bin/linuxX64/releaseExecutable/qbt-tracker-manager.kexe ./qbt-tracker-manager-x64
 COPY build/bin/linuxArm64/releaseExecutable/qbt-tracker-manager.kexe ./qbt-tracker-manager-arm64
 
 RUN if [ "$(uname -m)" = "x86_64" ]; then mv /app/qbt-tracker-manager-x64 /app/qbt-tracker-manager; else mv /app/qbt-tracker-manager-arm64 /app/qbt-tracker-manager; fi
