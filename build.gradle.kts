@@ -21,7 +21,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.drewcarlson:qbittorrent-client:1.1.0-alpha02")
-                implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.4")
+                implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.6.0")
                 implementation("com.github.ajalt.clikt:clikt:5.0.1")
                 implementation("io.ktor:ktor-client-cio:3.0.0")
                 //implementation("io.ktor:ktor-client-logging:3.0.0")
